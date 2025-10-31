@@ -1,0 +1,57 @@
+body{
+    background-image: url(lms\ image\ front\ page.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+    background-size:cover;
+}
+header{
+    background-color: #0078d7;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0.2);
+
+}
+button{
+    background-color: #0078d7;
+    color: white;
+    border:none ;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+     font-weight: bold;
+}
+button:hover{
+    background-color: #005fa3;
+}
+.ab:hover{
+   background-color: green;
+}
+.db:hover{
+    background-color: red;
+}
+table{
+    margin: 20px auto;
+    border-collapse: separate;
+    border-spacing: 40px 15px;
+}
+th{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 900;
+}
+td{
+    font-size: 16px;
+    text-align: left;
+}
+.dab:hover{
+   text-decoration: underline;
+   background-color: yellow;
+   color: black;
+}

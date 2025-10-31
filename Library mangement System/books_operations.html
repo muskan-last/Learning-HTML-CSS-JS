@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Operations</title>
+    <link rel="stylesheet" href="book_operations.css">
+</head>
+<body>
+    <header>Library Management System - Book Operations </header><br>
+    <h2>hello and welcome to the Library Management System</h2><br>
+    <div class="container">
+        <table>
+      <tr>
+            <th>OPRATIONS</th>
+            <th>ACTIONS</th>
+      </tr>
+      <tr>
+           <td><b>Add Book</b></td>
+           
+           <td> <button class="ab" onclick="addbook()">Add</button></td>
+      </tr>
+      <tr>
+           <td><b>Search Book</b></td>
+           <td> <button class="sb" onclick="searchbook()">Search Book</button></td>
+      </tr>
+       <tr >
+           <td><b>Update Book Details</b></td>
+           <td> <button class="ub" onclick="update_book_details()">Update Book Details</button></td>
+      </tr>
+       <tr>
+           <td><b>Delete Book </b></td><br>
+           <td> <button class="db"onclick="deletebook()">Delete Book</button></td>
+      </tr>
+       <tr>
+           <td><b>Issue Book</b></td>
+           <td> <button class="ib"onclick="issuebook()">Issue Book</button></td>
+      </tr>
+       <tr >
+           <td><b>Return Book</b></td>
+           <td> <button class="rb" onclick="returnbook()">Return Book</button></td>
+      </tr>
+       <tr >
+           <td><b>Check Avalability</b> </td>
+           <td> <button class="ca"onclick="check_avalability_book()">Check Avalability </button></td>
+      </tr>
+       <tr >
+           <td><b>Display All Books</b> </td>
+           <td> <button class="dab"onclick="Display_All_Books()">Display All Books</button></td>
+      </tr>
+        </table>
+    </div>
+    <div id="output">Result will be displayed here...</div>
+</div>
+
+
+    <label for="" class="next"></label>
+        <button class="next" onclick="window.location.href='show_data.html'">next</button>
+    <script src="page.js"></script>
+</body>
+</html>

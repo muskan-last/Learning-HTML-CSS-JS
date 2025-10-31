@@ -2,6 +2,10 @@
     win : 0,
     lost : 0,
     tie : 0,
+
+    display_score : function(){
+      return  `WON : ${score.win} LOST : ${score.lost} TIE: ${score.tie}`;
+    }
    };
    let computer_choice;
 
@@ -61,5 +65,5 @@
      
      ${reulty}
      
-     WON : ${score.win} LOST : ${score.lost} TIE: ${score.tie}`);
+    ${score.display_score()}`);
      }
