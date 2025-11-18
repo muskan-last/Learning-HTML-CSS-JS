@@ -1,39 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   
-    <title>Myntra Clone</title>
+    <title>MYNTRA CLONE</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header>
-        <div class="logo_container">
-            <a href="#"><imag class="myntra_home" src="new-myntra-logo.png" alt="Myntra Logo"></a>
-            </div>
-        <nav class="navbar">
+   <div id="navigation"></div>
+ <main>
+    <div class="banner-container">
+        <img class="banner-image" src="images/banner11.png" alt="Main banner">
+    </div>
+    <div class="catagory-heading">medal worthy brands to bag</div>
+    <div class="catagory-items">
+        <a href="#"><img class="sale-item" src="images/ifb1.png"></a>
+        <a href="#"><img class="sale-item" src="images/ifb2.png"></a>
+        <a href="#"><img class="sale-item" src="images/ifb3.png"></a>
+        <a href="#"><img class="sale-item" src="images/ifb5.png"></a>
+        <a href="#"><img class="sale-item" src="images/ifb6.png"></a>
+        <a href="#"><img class="sale-item" src="images/ifb7.png"></a>
+        <a href="#"><img class="sale-item" src="images/ifb8.png"></a>
+        <a href="#"><img class="sale-item" src="images/ifb9.png"></a>
+        <a href="#"><img class="sale-item" src="images/ifb10.png"></a>
+        <a href="#"><img class="sale-item" src="images/ifb11.png"></a>
+        <a href="#"><img class="sale-item" src="images/ifb12.png"></a>
+        <a href="#"><img class="sale-item" src="images/ifb13.png"></a>
+        <a href="#"><img class="sale-item" src="images/ifb14.png"></a>
+        <a href="#"><img class="sale-item" src="images/ifb15.png"></a>
+        <a href="#"><img class="sale-item" src="images/ifb16.png"></a>
+        <a href="#"><img class="sale-item" src="images/ifb17.png"></a>
+        <a href="#"><img class="sale-item" src="images/ifb18.png"></a>
+        <a href="#"><img class="sale-item" src="images/ifb19.png"></a>
+        <a href="#"><img class="sale-item" src="images/ifb20.png"></a>
+        <a href="#"><img class="sale-item" src="images/image5.jpg"></a>     
 
-            <a href="#">Men</a>
-            <a href="#">Women</a>
-            <a href="#">Kinds</a>
-            <a href="#">Home & Living</a>
-            <a href="#">Beauty</a>
-            <a href="#">Studio<sup>New</sup></a>
-
-        </nav>
-        <div class="search_bar">Search</div>>
-        <div class="action_bar">Actions</div>
+    </div>
 
 
+     <div class="catagory-heading">shop by catagory</div>
+    <div class="catagory-items">
+        <a href="#"><img class="sale-item" src="images/ifm9.png"></a>
+        <a href="#"><img class="sale-item" src="images/ifm7.png"></a>
+        <a href="#"><img class="sale-item" src="images/ifm11.png"></a>
+        <a href="#"><img class="sale-item" src="images/ifm4.png"></a>
+        <a href="#"><img class="sale-item" src="images/ifm2.png"></a>
+        <a href="#"><img class="sale-item" src="images/ifm5.png"></a>
+        <!-- <a href="#"><img class="sale-item" src="images/ifm10.png"></a> -->
+        <a href="#"><img class="sale-item" src="images/ifm3.png"></a>
+        <a href="#"><img class="sale-item" src="images/ifm1.png"></a>
+        <a href="#"><img class="sale-item" src="images/ifm13.png"></a>
+        <a href="#"><img class="sale-item" src="images/ifm15.png"></a>
+    </div>
+     <hr>
 
-    </header>
-    <main>
-       <div class="banner_container">banner_container</div>
-       <div class="catagory_heading">catagory_heading</div>
-       <div class="catagory_items">catagory_items</div>
+    <div class="items-conatiner"></div>
+
+ </main>
+ <footer>
+    <div class="footer-conatiner">
+        <div class="footer-col">
+           <h3>ONLINE SHOPING</h3>
+            <a href="#">Man</a>
+      <a href="#">Woman</a>
+      <a href="#">Kind</a>
+      <a href="#">Home & Living</a>
+      <a href="#">Beauty</a>
+      <a href="#">Gift card</a>
+      <a href="#">Myntra Insider</a>     
+        </div>
+
+          <div class="footer-col">
+           <h3>ONLINE SHOPING</h3>
+            <a href="#">Man</a>
+      <a href="#">Woman</a>
+      <a href="#">Kind</a>
+      <a href="#">Home & Living</a>
+      <a href="#">Beauty</a>
+      <a href="#">Gift card</a>
+      <a href="#">Myntra Insider</a>     
+        </div>
 
 
-    </main>
-    <footer>footer</footer>
-    
+          <div class="footer-col">
+           <h3>ONLINE SHOPING</h3>
+            <a href="#">Man</a>
+      <a href="#">Woman</a>
+      <a href="#">Kind</a>
+      <a href="#">Home & Living</a>
+      <a href="#">Beauty</a>
+      <a href="#">Gift card</a>
+      <a href="#">Myntra Insider</a>     
+        </div>
+    </div>
+    <hr>
+
+    <div class="copyright">
+        @2023 www.myntra.com ALL rights reserved.
+    </div>
+ </footer>
+ <script src="index.js"></script>
 </body>
 </html>
+<script>
+      fetch("navigation.html")
+    .then(Response => Response.text())
+    .then(data => {
+        document.getElementById("navigation").innerHTML = data;
+    });
+</script>

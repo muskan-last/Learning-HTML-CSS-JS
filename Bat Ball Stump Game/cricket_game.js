@@ -1,13 +1,19 @@
- let score = {
+ 
+ //object
+
+ let scorestr= localStorage.getItem('Score');
+ let score;
+ reser_score(scorestr);
+ function reser_score(scorestr){
+     score = scorestr ? JSON.parse(scorestr) : {
     win : 0,
     lost : 0,
     tie : 0,
-
-    display_score : function(){
+ };
+   score.display_score = function(){
       return  `WON : ${score.win} LOST : ${score.lost} TIE: ${score.tie}`;
-    }
-   };
-   let computer_choice;
+    };
+   }
 
    function generate_computer_choice(){
        let random_number = Math.random() * 3;
@@ -60,10 +66,13 @@
     }
   }
     function show_result(user_move,comp_ch , reulty){
-      console.log(score);
-     alert(`you have chosen ${user_move}. computer choice is ${comp_ch} and 
-     
-     ${reulty}
-     
-    ${score.display_score()}`);
+      localStorage.setItem('Score' , JSON.stringify(score));
+
+      document.querySelector('#user_move').innerText=user_move ?`you have chosen :${user_move}`: ' ';
+      document.querySelector('#computer_choice').innerText=comp_ch ?`computer choice is: ${comp_ch}`: ' ';
+      document.querySelector('#result').innerText=reulty || ' ';
+      document.querySelector('#score').innerText=score.display_score();
+  
      }
+
+
